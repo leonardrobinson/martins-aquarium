@@ -1,76 +1,101 @@
 const database = {
     fish: [
-
-        name: "Rainbow Trout",
-        species: "Oncorhynchus mykiss",
-        length: "Varies, typically 10-20 inches",
-        diet: "Insects, small fish, crustaceans",
-        harvestLocation: "Reel foot Lake"
+        "id": 1,
+        image: "images/rainbow trout.jpg ",
+        name: "Rain",
+        species: "Rainbow Trout",
+        length: "20 inches",
+        location: "Reel Foot Lake"
+        food: "crustaceans",
+    },
+    {   "id": 2
+        image: "images/salmon.jpg",
+        name: "Solomon",
+        species: "Atlantic Salmon",
+        length: "30 inches",
+        location: "Atlantic Ocean"
+        food: "plankton",
+    },
+    {   "id": 3
+        image: "images/yellowtail snapper 1.jpg",
+        name: "Snyder",
+        species: "Yellowtail Snapper",
+        length: "18 inches",
+        location: "Bahamas"
+        food: "squid",
+    },
+    {   
+        "id": 4
+        image: "images/bluegill.jpg",
+        name: "Willis",
+        species: "Bluegill",
+        length: "10 inches",
+        location: "Lake Michigan"
+        food: "Insects",
+    },
+    {   
+        "id": 5
+        image: "images/tuna.jpg",
+        name: "Kiss",
+        species: "Tuna",
+        length: "15 feet",
+        location: "East Sea"
+        food: "Small fish",
+    },  
+    {   
+        "id": 6
+        image: "images/walleyes.jpg",
+        name: "Eva",
+        species: "Walleye"
+        length: "Typically 21 inches"
+        location: "Percy Priest Lake"
+        food: "crayfish"
+    },
+    {   
+        "id": 7
+        image: "images/Grouper (2).jpg",
+        name: "Mildred"
+        species: "Grouper"
+        length: "7 feet"
+        location: "Gulf of Mexico"
+        food: "crustaceans"
+    },  
+    {   
+        "id": 8
+        image: "images/red snapper.jpg",
+        name: "Reggie"
+        species: "Red Snapper"
+        length: "35 inches"
+        location: "coral reef"
+        food: "mollusks"
+        
+    },
+    {   
+        "id": 9
+        image: "images/catfish 1.jpg",
+        name: "Heathcliff"
+        species: "Catfish"
+        length: "24 inches"
+        location: "Mississippi River"
+        food: "small fish"
     },
     {
-        name: "Atlantic Salmon",
-        species: "Salmo salar",
-        length: "Varies, typically 20-30 inches",
-        diet: "Insects, small fish, plankton",
-        harvestLocation: "Canada"
-    },
-    {
-        name: "Yellowtail Snapper",
-        species: "Ocyurus chrysurus",
-        length: "Typically 12-24 inches",
-        diet: "Crustaceans, small fish, squid",
-        harvestLocation: "Bahamas"
-    },
-    {
-        name: "Bluegill",
-        species: "Lepomis macrochiruss",
-        length: "Typically 4-10 inches",
-        diet: "Insects, small fish, algae",
-        harvestLocation: "Lakes, ponds, riversJa"
-    },
-    {
-        name: "Tuna ",
-        species: "Thunnini",
-        length: "1-15 feet",
-        diet: "Small fish",
-        harvestLocation: "Japan"
-    },
-    {
-        name: "Walleye",
-        species: "Sander vitreus"
-        length: "Typically 12-30 inches"
-        diet: "Small fish, insects, crayfish"
-        harvested: "Lakes, rivers, reservoirs"
-    },
-    {
-        name: "Trout"
-        species: "Salvelinus fontinalis"
-        length: "Varies by species, typically 8-20 inches"
-        diet: "small fish, crustaceans"
-        harvested: "Streams, rivers, lakes"
-    },
-    {   name: "Red Snapper"
-        species: "Lutjanus campechanus"
-        length: "20-35 inches"
-        diet: "Fish, crustaceans, mollusks"
-        harvested: "coral reef"
-    },
-    {   name: "Catfish"
-        species: "Ictalurus punctatus"
-        length: "typically 12-36 inches"
-        diet: "trash"
-        harvested: "Rivers, lakes, ponds"
-    },
-    {
-        name: "Cod"
-    }   species: "Gadus morhua"
-        length: "20-40 inches"
-        diet: "Fish, crustaceans, mollusks"
-        harvested: "Atlantic  ocean, "
+        "id": 10
+        image: "images/clownfish.jpg"
+        name: "Bozo"
+        species: "Clownfish"
+        length: "4 inches"
+        location: "Pacific ocean"
+        food: "small fish"
+        
 
     // Add more fish objects here...
 ];
 
+export const getFish = () => {
+return database.fish.map(fish => ({...fish}))
+}
+
 // Example usage:
-console.log(fishSpecies[0]); // Print information about the first fish
-console.log(fishSpecies.length); // Print the total number of fish species in the array
+//console.log(fishSpecies[0]); // Print information about the first fish
+//console.log(fishSpecies.length); // Print the total number of fish species in the array
