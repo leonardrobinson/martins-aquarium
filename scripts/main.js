@@ -8,7 +8,7 @@ for (const fish of allFish) {
 //<script type="module" src="./scripts/main.js"></script>
 //</body>
 // Import the FishList function from the correct module
-import { FishList } from './fishlist.js
+import { FishList } from './fishlist.js'
 
 /*
     What is the CSS selector for the element where you

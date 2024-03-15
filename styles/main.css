@@ -1,0 +1,46 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Styling header */
+  header {
+    background-color: #333; /* Dark gray background */
+    color: #fff; /* White text */
+    padding: 20px;
+  }
+  
+  .logo h1 {
+    font-size: 24px;
+  }
+  
+  .contact {
+    float: right;
+    text-align: right;
+  }
+  
+  /* Styling navigation */
+  nav {
+    background-color: #666; /* Gray background */
+    padding: 10px 0;
+  }
+  
+  .navButton {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 8px 16px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #333;
+  }
+  
+  .btnOn {
+    background-color: #007bff; /* Blue */
+  }
+  
+  .btnOff {
+    background-color: #dc3545; /* Red */
+  }
+  
